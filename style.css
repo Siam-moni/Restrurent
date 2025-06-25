@@ -1,0 +1,678 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* For mobail: */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+[class*="col-"] {
+  float: right;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.main-div {
+  font-family: Arial, sans-serif;
+  background-color: #a96767;
+  margin: 0 auto;
+  width: 620px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+/* heading start here */
+.row {
+  text-align: center;
+  padding: 10px;
+  background-color: teal;
+  color: rgb(4, 4, 4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.row::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.logo-i {
+  font-size: 70px;
+  color: rgb(249, 246, 245);
+  border: 5px solid black;
+  border-radius: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.head {
+  width: 100%;
+  margin: 0 auto;
+}
+.head h1 {
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: underline;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.head p {
+  font-size: 25px;
+  color: rgb(11, 11, 11);
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: aquamarine;
+  border-radius: 10px;
+  font-family: "Courier New", Courier, monospace;
+  font-optical-sizing: auto;
+}
+.manu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  transform: translateY(-20px);
+  transition: 3s;
+}
+.manu a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  background-color: rgb(129, 251, 210);
+  padding: 10px;
+  border-radius: 5px;
+  width: 80%;
+  margin: 10px 0;
+}
+
+.manu a:hover {
+  background-color: aqua;
+  transform: translateY(-5px);
+  transition: 0.5s ease-in-out;
+  padding: 15px;
+}
+/* heading end here */
+
+/* banner start here  */
+.banner {
+  width: 100%;
+  text-align: center;
+  background-image: url(banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.banner-menu {
+  width: 100%;
+  height: 400px;
+  padding: 10px;
+}
+.banner-head h2 {
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  background-color: rgb(197, 190, 8);
+  width: 75%;
+  margin: 1% auto;
+  padding: 5px;
+  border-radius: 10px;
+}
+.banner-head p {
+  font-size: 22px;
+  color: rgb(18, 17, 17);
+  background: rgb(55, 229, 212);
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 85%;
+  margin: 5% auto;
+  border-radius: 10px;
+  padding: 5px;
+}
+.des {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+.des p {
+  width: 50%;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  margin: 5px auto;
+  padding: 10px;
+  background-color: #fbf8f8;
+  border-radius: 10px;
+}
+.des a {
+  width: 30%;
+  font-size: 20px;
+  color: rgb(245, 242, 242);
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #070792;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.des a:hover {
+  background-color: #0e0808;
+  width: 35%;
+  padding: 15px;
+  color: rgb(255, 255, 255);
+  transform: translateY(-5px);
+  transition: 0.5s ease-in-out;
+}
+/* banner end here  */
+/* menu start here */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #dc9696;
+  width: 100%;
+}
+.menu h2 {
+  font-size: 40px;
+  color: rgb(5, 5, 5);
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #dc9696;
+  box-sizing: border-box;
+  width: 100%;
+}
+.card-t {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #dc9696;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 10px;
+}
+/* menu-card1 start here */
+.pizza-card1 {
+  width: 80%;
+  /* height: 500px; */
+  background-color: #f5f4f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 5px solid #0c0c0c;
+  transition: 1s;
+  margin-bottom: 15px;
+}
+.pizza-card1:hover {
+  width: 83%;
+  box-shadow: 10px 10px 0px rgba(20, 8, 8, 0.2);
+}
+.pizza img {
+  width: 100%;
+  height: 400px;
+
+  box-sizing: border-box;
+}
+.pizza-text h3 {
+  font-size: 40px;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.pizza-text p {
+  font-size: 15px;
+  background-color: #b9aeae;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+}
+/* menu-card1 end here */
+
+/* menu-card2 start here */
+.burger-card2 {
+  width: 80%;
+  background-color: #f5f4f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 5px solid #0c0c0c;
+  transition: 1s;
+  margin-bottom: 15px;
+}
+.burger-card2:hover {
+  width: 83%;
+  box-shadow: 10px 10px 0px rgba(20, 8, 8, 0.2);
+}
+.burger img {
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+}
+.burger-text h3 {
+  font-size: 40px;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.burger-text p {
+  font-size: 15px;
+  background-color: #b9aeae;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+}
+/* menu-card2 end here */
+
+/* menu-card3 start here */
+.pasta-card3 {
+  width: 80%;
+  background-color: #f5f4f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 5px solid #0c0c0c;
+  transition: 1s;
+  margin-bottom: 15px;
+}
+.pasta-card3:hover {
+  width: 83%;
+  box-shadow: 10px 10px 0px rgba(20, 8, 8, 0.2);
+}
+.pasta img {
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+}
+.pasta-text h3 {
+  font-size: 40px;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.pasta-text p {
+  font-size: 15px;
+  background-color: #b9aeae;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+}
+/* menu-card3 end here */
+.pasta-card3 {
+  width: 80%;
+  background-color: #f5f4f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 5px solid #0c0c0c;
+  transition: 1s;
+  margin-bottom: 15px;
+}
+.pasta-card3:hover {
+  width: 83%;
+  box-shadow: 10px 10px 0px rgba(20, 8, 8, 0.2);
+}
+.pasta img {
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+}
+.pasta-text h3 {
+  font-size: 40px;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.pasta-text p {
+  font-size: 15px;
+  background-color: #b9aeae;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+}
+/* menu-card4 start here */
+.salad-card4 {
+  width: 80%;
+  background-color: #f5f4f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 5px solid #0c0c0c;
+  transition: 1s;
+  margin-bottom: 15px;
+}
+.salad-card4:hover {
+  width: 83%;
+  box-shadow: 10px 10px 0px rgba(20, 8, 8, 0.2);
+}
+.salad img {
+  width: 100%;
+  height: 410px;
+  box-sizing: border-box;
+}
+
+.salad-text h3 {
+  font-size: 40px;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.salad-text p {
+  font-size: 15px;
+  background-color: #b9aeae;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+}
+/* menu-card4 end here */
+
+/* menu-card5 start here */
+.dessert-card5 {
+  width: 80%;
+  background-color: #f5f4f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 5px solid #0c0c0c;
+  transition: 1s;
+  margin-bottom: 15px;
+}
+.dessert-card5:hover {
+  width: 83%;
+  box-shadow: 10px 10px 0px rgba(20, 8, 8, 0.2);
+}
+.dessert img {
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+}
+.dessert-text h3 {
+  font-size: 40px;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.dessert-text p {
+  font-size: 15px;
+  background-color: #b9aeae;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+}
+/* menu-card5 end here */
+/* menu-card6 start here */
+.coffee-card6 {
+  width: 80%;
+  background-color: #f5f4f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 5px solid #0c0c0c;
+  transition: 1s;
+  margin-bottom: 15px;
+}
+.coffee-card6:hover {
+  width: 83%;
+  box-shadow: 10px 10px 0px rgba(20, 8, 8, 0.2);
+}
+.coffee img {
+  width: 100%;
+  height: 400px;
+  box-sizing: border-box;
+}
+.coffee-text h3 {
+  font-size: 40px;
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.coffee-text p {
+  font-size: 15px;
+  background-color: #b9aeae;
+  color: rgb(12, 12, 12);
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  width: 80%;
+}
+/* order now start here */
+.order {
+  background-color: rgb(228, 202, 169);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.order h2 {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 10px;
+  text-decoration: underline;
+}
+.from {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f4f4;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.from input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #0c0c0c;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.from textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #0c0c0c;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+}
+.submit input {
+  width: 40%;
+  padding: 10px;
+  background-color: #b9aeae;
+  margin: 0% auto;
+  color: rgb(20, 15, 15);
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+.submit input:hover {
+  cursor: pointer;
+  background-color: #ad5a5a;
+}
+/* order now end here */
+/* about us start here */
+.about {
+  background-color: rgb(153, 133, 106);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.about h2 {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 10px;
+  text-decoration: underline;
+}
+.about p {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: justify;
+}
+/* about us end here */
+/* contact us start here */
+.contact {
+  background-color: rgb(153, 133, 106);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact h2 {
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 10px;
+  text-decoration: underline;
+}
+.contact p {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 10px auto;
+  text-align: left;
+}
+/* contact us end here */
+/* footer start here */
+.copy {
+  background-color: rgb(235, 142, 21);
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.foot p {
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+.foot a {
+  text-decoration: none;
+  background-color: #bf5f5f;
+  color: #f5f4f4;
+  padding: 5px;
+  border-radius: 5px;
+}
+.foot a:hover {
+  background-color: #f9f3f3;
+  color: #0c0c0c;
+}
+/* footer end here */
+/* menu end here */
